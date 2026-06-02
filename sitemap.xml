@@ -11,14 +11,14 @@
 
   <!-- Optional future pages (add these if they exist) -->
   <url>
-    <loc>https://oikosof.netlify.app/event.html</loc>
+    <loc>https://oikosof.netlify.app/events</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://oikosof.netlify.app/FAQs.html</loc>
+    <loc>https://oikosof.netlify.app/FAQs</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
