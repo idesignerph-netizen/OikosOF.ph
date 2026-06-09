@@ -1773,6 +1773,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 return false;
             }
+        });
+    }
+});
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Script loaded successfully');
+});
 
             // Note: Date validation is handled by the browser date input UI
             // Server-side validation will occur when Formspree receives the submission
