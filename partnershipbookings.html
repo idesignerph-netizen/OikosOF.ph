@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnership | Oikos Orchard & Farm</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Join our partnership program at Oikos Orchard & Farm. Work with us on Booking.com, Airbnb, Skycanner, Casai and our marketplace products." />
+    <meta name="keywords" content="partnership, Oikos Orchard Farm partnership, Booking.com, Airbnb, Skycanner, Casai, Farmyield, FarmyHub" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/OikosOF.png"/>
+
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        /* Partnership Page Styles */
+        .partnership-hero {
+            background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .partnership-hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .partnership-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .partnership-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+        .partnership-section:nth-child(even) {
+            background-color: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary-green);
+            border-radius: 2px;
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .partner-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 250px;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(39, 174, 96, 0.2);
+        }
+
+        .partner-card h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .partner-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .partner-icon {
+            font-size: 3rem;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .btn-partnership {
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 15px 60px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-partnership:hover {
+            background: var(--light-green);
+            color: var(--dark-green);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .partnership-footer {
+            background: #2F251A;
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .partnership-footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: var(--light-green);
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .partnership-hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .partner-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-leaf" style="margin-right: 10px;"></i>
+                Oikos Orchard & Farm
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQs.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="partnershipbookings.html">Partnership</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="partnership-hero">
+        <div class="container">
+            <h1>Our Partnership Program</h1>
+            <p>Collaborate with Oikos Orchard & Farm to expand your reach and grow your business</p>
+        </div>
+    </section>
+
+    <!-- Our Partnership Section -->
+    <section class="partnership-section">
+        <div class="container">
+            <h2 class="section-title">Our Partnership</h2>
+            <div class="partner-grid">
+                <!-- Booking.com -->
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Booking.com</h3>
+                    <p>Connect with millions of travelers worldwide and offer your services on the world's leading booking platform.</p>
+                </div>
+
+                <!-- Airbnb -->
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Airbnb</h3>
+                    <p>Reach guests looking for unique, authentic experiences through Airbnb's innovative hospitality platform.</p>
+                </div>
+
+                <!-- Skycanner -->
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Skycanner</h3>
+                    <p>Partner with one of the world's largest travel search engines to reach travelers during their planning stage.</p>
+                </div>
+
+                <!-- Casai -->
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Casai</h3>
+                    <p>Integrate with Casai's network for enhanced visibility and access to premium vacation rental opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Products Section -->
+    <section class="partnership-section">
+        <div class="container">
+            <h2 class="section-title">For Marketplace Products</h2>
+            <div class="partner-grid">
+                <!-- Farmyield -->
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Farmyield</h3>
+                    <p>Sell your farm products directly to consumers through Farmyield's thriving agricultural marketplace.</p>
+                </div>
+
+                <!-- FarmyHub -->
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>FarmyHub</h3>
+                    <p>Expand your reach to rural and urban markets through FarmyHub's comprehensive farm-to-consumer platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Grow with Us?</h2>
+            <p>Join Oikos Orchard & Farm's partnership network and unlock new opportunities for your business.</p>
+            <button class="btn-partnership" onclick="document.getElementById('apply-form').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-handshake" style="margin-right: 10px;"></i>
+                Apply for Partnership
+            </button>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="partnership-section" id="apply-form">
+        <div class="container">
+            <h2 class="section-title">Partnership Application</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company/Organization Name</label>
+                            <input type="text" class="form-control" id="company" placeholder="Enter company name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="partnership" class="form-label">Partnership Interest</label>
+                            <select class="form-select" id="partnership" required>
+                                <option value="">Select a partnership type...</option>
+                                <option value="booking">Booking.com</option>
+                                <option value="airbnb">Airbnb</option>
+                                <option value="skycanner">Skycanner</option>
+                                <option value="casai">Casai</option>
+                                <option value="farmyield">Farmyield</option>
+                                <option value="farmyhub">FarmyHub</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your partnership proposal..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-lg w-100">
+                            <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>
+                            Submit Application
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="partnership-footer">
+        <div class="container">
+            <p>&copy; 2026 Oikos Orchard & Farm. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="Events.html">Events</a>
+                <a href="FAQs.html">FAQs</a>
+                <a href="partnershipbookings.html">Partnership</a>
+            </div>
+            <p style="margin-top: 20px; opacity: 0.8;">
+                <i class="fas fa-phone"></i> Contact us for more information
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Handle form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your partnership application! We will review your submission and get back to you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
